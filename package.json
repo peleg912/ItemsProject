@@ -4,7 +4,7 @@
   "description": "my project",
   "main": "app.js",
   "scripts": {
-    "start": "cd angular && ng build && cd .. && node app"
+    "start": "npm install && cd angular && npm install && ng build && cd .. && node app"
   },
   "author": "\"Peleg Adiv\"",
   "license": "ISC",
