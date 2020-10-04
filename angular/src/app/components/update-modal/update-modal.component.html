@@ -1,0 +1,43 @@
+<!-- Modal- update item -->
+   <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="upForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">ID</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="id" disabled >
+                    
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name" >
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Description</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" formControlName="description">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Count</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1" formControlName="count">
+                    <small id="emailHelp" class="form-text text-muted">Please insert only Integer and positive number</small>
+                </div>
+              </form>
+                   
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="updateItem()">Update</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="updateCloseButton">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

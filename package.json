@@ -1,0 +1,15 @@
+{
+  "name": "itemsproject",
+  "version": "1.0.0",
+  "description": "my project",
+  "main": "app.js",
+  "scripts": {
+    "start": "cd angular && ng build && cd .. && node app"
+  },
+  "author": "\"Peleg Adiv\"",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5"
+  }
+}

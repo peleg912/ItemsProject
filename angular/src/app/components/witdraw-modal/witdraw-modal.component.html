@@ -1,0 +1,23 @@
+<div class="modal" tabindex="-1" id="withdrawModal" *ngIf="item">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Withdraw {{ item.name }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form >
+                <input class="form-control form-control-sm" type="number" placeholder="How many?" [formControl]="wForm">   
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-info" (click)="witdrawItem()">withdraw</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="witdrawCloseButton">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
